@@ -20,3 +20,8 @@ clean:
 	rm -f output/*.rds
 	rm -f output/*.png
 	rm -f *.html
+	
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
+	
