@@ -38,6 +38,8 @@ project_image: dockerfile $(PROJECTFILES) $(RENVFILES)
 
 
 # Rule to build report automatically in the container
-report/final_report.html: 
-	docker run -v "$$(pwd)"/report:/final_project/report erikacanda/final_image 
+macreport/final_report.html: 
+	docker run -v "$$(pwd)"/report:/final_project/report erikacanda/final_image
+windowsreport/final_report.html: 
+	docker run -v "/$$(pwd)"/report:/final_project/report erikacanda/final_image
 	

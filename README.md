@@ -45,5 +45,8 @@ Use the command: make final_report.html
 # Intructions for Building an Automated report using docker hub
 
 Link to docker image: https://hub.docker.com/r/erikacanda/final_image/tags 
-1. Run the command: docker run erikacanda/final_image 
+
+1. For mac users run the command: make macreport/final_report.html
+2. For windows usersrun the command: make windowsreport/final_report.html
+
 
