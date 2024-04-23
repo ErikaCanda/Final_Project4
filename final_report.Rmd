@@ -1,5 +1,5 @@
 ---
-title: "project4_report"
+title: "final_report"
 author: "Erika Canda"
 date: "`r Sys.Date()`"
 output:
@@ -35,7 +35,7 @@ library(here)
 library(dplyr)
 library(labelled)
         
-here::i_am("project4_report.Rmd")
+here::i_am("final_report.Rmd")
 stacked_data <- readRDS(
   file = here::here("output", "data_clean.rds")
 )

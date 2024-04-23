@@ -28,5 +28,22 @@
    - `code/01_make_table1.R` to generate Table 1 and save it as `output/table_one.rds`
    - `code/02_make_barplot.R` to generate the bar plot and save it as `output/barplot.png`
    - `code/03_render_report.R` to render the R Markdown report and save the compiled report as `output/project4_report.config_default.html`
-3. Once the all og the scripts have been executed, the final report will be available in the `report/` folder as `project4_report.config_default.html`.
-```
+3. Use the make final_report.htm command to run all of the scripts and the final report will be available in the `report/` folder as `project4_report.config_default.html`.
+
+# Generating the report
+
+Use the command: make final_report.html
+
+# Intructions for Building the Docker Image
+
+1. Open Docker on your computer.
+2. Clone this repository to your local machine in the directory you plan to work from:
+   git clone https://github.com/your-username/nam-of-repository.git
+3. To make the image in your local container use the command: make project_image
+4. To run the report use the command: docker run -v "$$(pwd)/report":/final_project/report final_project3 
+
+# Intructions for Building an Automated report using docker hub
+
+Link to docker image: https://hub.docker.com/r/erikacanda/final_image/tags 
+1. Run the command: docker run erikacanda/final_image 
+
